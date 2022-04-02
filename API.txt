@@ -1,0 +1,26 @@
+var apiKey = "9698226c296e798b640d9d0c82d8bca28292a6c4444397c0426d5ea9cec3c2f7";
+var ccStreamer = new WebSocket('wss://streamer.cryptocompare.com/v2?api_key=' + apiKey);
+ccStreamer.onopen = function onStreamOpen() {
+    var subRequest = {
+        "action": "SubAdd",
+        "subs": ["0~Coinbase~BTC~USD"]
+    };
+    ccStreamer.send(JSON.stringify(subRequest));
+    console.log(ccStreamer)
+}
+
+ccStreamer.onmessage = function onStreamMessage(message) {
+    var message = event.data;
+    console.log("Received from Cryptocompare: " + message);
+}
+
+// Здесь пытаюсь переделать запрос на API
+const API_COIN = "9698226c296e798b640d9d0c82d8bca28292a6c4444397c0426d5ea9cec3c2f7"
+const URL_COIN = `wss://streamer.cryptocompare.com/v2?api_key=${API_COIN}`;
+const ALL_COIN =  () =>{
+fetch(URL_COIN).then(
+    response => {
+        console.log(response.json())
+    }
+)
+}

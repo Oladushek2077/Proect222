@@ -1,0 +1,589 @@
+/*RESET.CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+                                                                /* Arbait */
+
+.wrapper{
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+.center{
+	max-width: 1125px;
+	width: 100%;
+	margin: 0 auto;
+}
+body{
+	font-family: 'Roboto';
+    --table-background-color: #fff;
+    --table-divider-color: #eff2f5;
+    --table-row-hover-background-color: rgb(248,250,253);
+    
+    --control-border-color: #101113;
+    --control-background-color: #fff;
+    --control-caret-color: #000;
+    --control-transition-duration: 0.3s;
+    --control-transition-easing: ease;
+    --control-dropdown-background-color: #eff2f5;
+    --theme-color: #3861fb;
+    --theme-light-color: #cfd6e4;
+    --theme-light-blue-color: #e6f0ff;
+    --theme-light-blue: #f0f6ff;
+    --theme-light-blue-font: #3861fb;
+    --text-color: #000;
+    --info-icon-color: #a6b0c3;
+    --text-color-sub: #58667e;
+    --text-color-error: #ea3943;
+    --bt-light-blue: #f0f6ff;
+    --var-text-small: 14px;
+    --up-color: #16c784;
+    --down-color: #ea3943;
+    --border-color: #eff2f5;
+    --bg-color: #fff;
+    --color-primary-black: #000;
+    --color-primary-white: #fff;
+    --color-primary-blue: #3861fb;
+    --color-light-neutral-1: #f8fafd;
+    --color-light-neutral-2: #eff2f5;
+    --color-light-neutral-3: #cfd6e4;
+    --color-light-neutral-4: #a6b0c3;
+    --color-light-neutral-5: #808a9d;
+    --color-light-neutral-6: #58667e;
+    --color-light-neutral-7: #eff2f5;
+    --color-gradient-end: rgba(248,250,253,0);
+    --button-border-color: #cfd6e4;
+    --button-bg-color: #222531;
+    --breakpoint-md: 768px;
+    --dark-bg: #000;
+    --card-bg: #fff;
+    --box-shadow: 0px 0px 2px rgba(128,138,157,0.12),0px 0px 24px rgba(128,138,157,0.14);
+}
+
+															/* header */
+
+.headerSect1{
+	display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 15px 15px;
+    max-width: 1400px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+header > .headerSect1{
+	display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 15px 15px;
+    max-width: 1400px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+}
+ .logoLick{
+    margin-right: auto;
+}
+
+ .logoImg{
+	width: 168px;
+    height: 28px;
+}
+ .logoImg2{
+    position: relative;
+    background-image: url(https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_1.svg?_=9448cbf);
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header .burgerst{
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 15px;
+}
+header .burgerst .burgersvg{
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+}
+.burgersvg > line{
+    stroke: currentcolor;
+    stroke-width: 2;
+}
+header > .headerSect1 .stekLink{
+	display: flex;
+    flex: 1 1 0%;
+    padding-left: 20px;
+	-webkit-box-align: center;
+    align-items: center;
+}
+header > .headerSect1 .stekLink .podStekLink{
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+header > .headerSect1 .stekLink .podStekLink .bildS{
+	font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    cursor: pointer;
+    display: inline-block;
+}
+header > .headerSect1 .stekLink .podStekLink .bildS .silkaHed{
+	padding: 0px 8px 0px 0px;
+    color: var(--text-color);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 61px;
+	text-decoration: none;
+}
+header > .headerSect1 .stekLink .podStekLink .bildS .silkaHed .silkaHedText{
+	position: relative;
+    display: inline;
+}
+header > .headerSect1 .stekLink .podStekLink .razdel{
+	flex: 1 1 0%;
+    max-width: 24px;
+    min-width: 12px;
+}
+header > .headerSect1 .WoButt button{
+	height: 36px;
+    white-space: nowrap;
+}
+header > .headerSect1 .ButtonLogIn{
+	-webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    border: 0px;
+    border-radius: 8px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    width: auto;
+    height: 32px;
+    font-size: 12px;
+    padding: 0px 16px;
+    line-height: 18px;
+}
+header > .headerSect1 .ButtonSingnUp{
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(56, 97, 251);
+    border: 0px;
+    border-radius: 8px;
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    width: auto;
+    height: 32px;
+    font-size: 12px;
+    padding: 0px 16px;
+    line-height: 18px;
+}
+/* Навигатор */
+
+.navigator{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: 932;
+    color: rgb(23, 25, 36);
+    right: 100%;
+    transition: right 0.2s ease 0s;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.logInf{
+    position: fixed;
+    height: 50%;
+    width: 50%;
+    top: 0px;
+    z-index: 932;
+    color: rgb(23, 25, 36);
+    transition: right 0.2s ease 0s;
+    background-color: rgb(185, 126, 126);
+}
+
+.navigatorhead{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 60px;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 16px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: rgba(128, 138, 157, 0.12) 0px 8px 32px, rgba(128, 138, 157, 0.08) 0px 1px 2px;
+    z-index: 934;
+}
+.burgerkrest{
+    border-radius: 8px;
+    padding: 0px;
+    width: 48px;
+
+
+    align-items: center;
+    background: transparent;
+    border: 0px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    height: 48px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.krestsvg{
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+}
+.clasnovigspisok{
+    padding: 8px 16px;
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+.ulburg{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.ulburg > li{
+    display: block;
+}
+.lizaglav{
+    padding: 0px 8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 48px;
+    color: rgb(23, 25, 36);
+    transition: all 0.2s ease 0s;
+    border-bottom: 1px solid rgb(239, 242, 245);
+}
+.lizaglav > .liname{
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(23, 25, 36);
+    font-size: 16px;
+    font-weight: 600;
+}
+.lizaglav > .lisvg{
+    margin: 0px;
+}
+.licontent{
+    height: 0px;
+    padding: 0px 8px;
+    transition: height 0.36s ease 0s;
+    overflow-y: hidden;
+}
+.podlicontent{
+    padding: 4px 0px 10px;
+}
+.lilinkA{
+    padding: 10px 0px;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(56, 97, 251);
+    text-decoration: none;
+    cursor: pointer;
+}
+.linkimg{
+    width: 28px;
+    height: 28px;
+}
+.linkimg > img{
+    width: 100%;
+    height: 100%;
+}
+.litext{
+    line-height: 1.5;
+    margin: 0px 0px 0px 12px;
+    color: rgb(23, 25, 36);
+    font-size: 16px;
+    font-weight: 500;
+}
+.regist{
+    margin-top: 40px;
+}
+.registcaa{
+    align-items: center;
+    background: rgb(56, 97, 251);
+    border: 0px;
+    border-radius: 8px;
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    padding: 0px 24px;
+    line-height: 24px;
+}
+.registli{
+    align-items: center;
+    background: rgb(239, 242, 245);
+    border: 0px;
+    border-radius: 8px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    padding: 0px 24px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/* Надпись */
+
+.bodimidl > .Todays{
+    padding-top: 24px;
+    padding-bottom: 44px;
+}
+
+/* Таблица */
+
+.table1{
+    margin: auto;
+    font-size: 14px;
+    width: 100%;
+    transform: translateZ(0px);
+}
+.gran{
+    border-top: 2px solid #eff2f5;;
+    border-bottom: 2px solid #eff2f5;;
+}
+.gran >th{
+    border-top: 1px solid var(--table-divider-color);
+    padding: 11px 10px;
+    text-align: right;
+    z-index: 99;
+    font-size: 12px;
+}
+
+.otstup{
+display: flex;
+justify-content: right;
+}
+
+.boxstail1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.boxstail2{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: right;
+    align-items: center;
+}
+.boxstail2 > p{
+    white-space: nowrap;
+}
+
+.boxstailP{
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(23, 25, 36);
+    font-size: 12px;
+}
+.rowno{
+    display: flex;
+    justify-content: right;
+}
+
+
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody td{
+    border-bottom: 2px solid var(--table-divider-color);
+    padding: 10px;
+    background-color: var(--table-background-color);
+    vertical-align: middle;
+}
+
+.stilP1{
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(88, 102, 126);
+    font-size: 12px;
+}
+
+.nameValut{
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.cmc-link{
+    text-decoration: none;
+}
+.chartmini{
+    max-width: 300px;
+    max-height: 150px;
+    height: 99%; 
+    width: 150px;
+}
+
+.nameValut2{
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.nameValut2 > .coin-logo{
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+}
+
+.nameValut2 > .nameValut3{
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.nameValut3 > p{
+    font-size: 14px;
+    margin: 0px 0px 0px 5px;
+    line-height: 24px;
+}
+
+.abrValut{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.coin-item-symbol{
+    font-size: 14px;
+    margin: 0px 0px 0px 6px;
+    line-height: 24px;
+    color: rgb(128, 138, 157);
+}
+
+.priceColor{
+    color: black;
+    text-align: right;
+}
+
+@media (max-width: 1150px){
+    .table1{
+        display: block;
+        width: 100%;
+    }
+    .table1{
+        overflow-x: auto;
+    }
+    .table1 .medialeft0{
+        display: none;
+    }
+    .table1 .medialeft1{
+        position: sticky;
+        left: 0.1px;
+        z-index: 100;
+        background-color: #fff;
+        max-width: 100%;
+    }
+    .table1 .medialeft2{
+        position: sticky;
+        left: 25px;
+        z-index: 100;
+        background-color: #fff;
+        max-width: 100%;
+    }
+
+
+
+}
